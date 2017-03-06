@@ -1,14 +1,18 @@
 $(document).ready(function (){
 
-console.log("TEST");
-
 $.ajax({
     type: 'GET',
-    url: 'http://api.openweathermap.org/data/2.5/weather?q=seattle&APPID=5c60648bdc118d0dc3a70c4dd3f7856e',
+    url: 'http://api.wunderground.com/api/f9ee0f522276d317/conditions/q/wa/seattle.json',
     success: function (data) {
-        //STUFF GOES HERE
-        console.log(data);
+      //variables for the temps and conditions i need
+      var temp_f = data.current_observation.temp_f;
+      var temp_c = data.current_observation.temp_c;
+      var conditions = data.current_observation.weather;
+
+        //a way to determine what icon gets displayed based on current temperature and conditions
+        //just text to start
+        console.log(temp_f + " &deg; F");
+        console.log(temp_c + " &deg; C");
         }
     });
 });
-    // need a way to replace old quote with new with each click
