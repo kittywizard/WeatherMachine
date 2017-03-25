@@ -21,16 +21,21 @@
 <body>
   <div class="container">
     <div class="header clearfix">
-
       <h3 class="text-muted">Weather</h3>
     </div>
 
-    <div class="container">
+      <div class='form'>
+          <label id='zipLabel' for='zipField'>Enter your zipcode:</label>
+          <input id='zipField' type='number' maxlength='5'></input>
+          <button id='subButton' type='button'>Submit</button>
+      </div>
+      <p>Feels like..</p>
       <div class="temp"></div>
+
       <div class="conditions"></div>
       <div class="location"></div>
 
-      <button id="convert" class="btn btn-default">&deg; C/F</button>
+      <button id="convert" class="btn btn-default">&deg;C</button>
     </div>
 
 
