@@ -1,37 +1,52 @@
 body {
   font-family: helvetica, sans-serif;
+  background-color: #fff;
 
 }
 
 .container {
-  background-color: #fff;
   padding: 10px;
+  height: 100vh;
 }
 
 #convert {
   background-color: white;
   border: none;
+  padding: 5px;
+
 }
 
-.temp {
-  font-size: 30px;
+#getCoords {
+  background-color: white;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 70px;
   color: #000;
   font-weight: bold;
 
 }
 
 .location {
-  font-size: 16px;
+  font-size: 12px;
   color: #000;
+
 }
 
 .conditions {
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
 
 }
 
+
+/* for icons */
 i {
-  font-style: italic;
-  font-family: cursive;
+  font-size: 65px;
 }
